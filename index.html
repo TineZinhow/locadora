@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Top 20 Filmes - A Locadora Pessoal</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="locadora.css">
 </head>
 <body>
 <header id="header">
@@ -52,8 +52,9 @@
 
   <main id="main-content">
     <h2>O Meu Ranking Pessoal: A Locadora de Filmes Favoritos</h2>
-    <p>Role para ver os 20 filmes e clique nas opções "Emprestar" ou "Vender" para simular a transação.</p>
+    <p>Role para ver os 20 filmes e clique nas opções "Emprestar", "Vender" ou "Ver Trailer".</p>
 
+    <!-- ==================== FILMES ==================== -->
     <section class="movie-ranking" id="filme1">
       <div class="ranking-header">
         <h3>#1: O Poderoso Chefão (1972)</h3>
@@ -64,6 +65,7 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme1', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme1', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=sY1S34973zA" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme1">Disponível para locação.</p>
       </div>
     </section>
@@ -78,6 +80,7 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme2', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme2', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=NmzuHjWmXOc" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme2">Disponível para locação.</p>
       </div>
     </section>
@@ -92,6 +95,7 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme3', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme3', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme3">Disponível para locação.</p>
       </div>
     </section>
@@ -106,6 +110,7 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme4', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme4', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=V75dMMIW2B4" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme4">Disponível para locação.</p>
       </div>
     </section>
@@ -120,10 +125,10 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme5', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme5', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=LbfMDwc4azU" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme5">Disponível para locação.</p>
       </div>
     </section>
-
     <section class="movie-ranking" id="filme6">
       <div class="ranking-header">
         <h3>#6: Um Maluco no Golfe</h3>
@@ -134,6 +139,7 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme6', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme6', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=ekb5OcBPYLM" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme6">Disponível para locação.</p>
       </div>
     </section>
@@ -148,62 +154,67 @@
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme7', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme7', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=d96cjJhvlMA" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme7">Disponível para locação.</p>
       </div>
     </section>
 
     <section class="movie-ranking" id="filme8">
       <div class="ranking-header">
-        <h3>#8: Guardiões da Galáxia Vol.2</h3>
+        <h3>#8: Guardiões da Galáxia Vol. 2</h3>
         <span class="rank-number">8º Lugar</span>
       </div>
-      <p>Uma sequência divertida que explora laços familiares e muita ação espacial.</p>
+      <p>A sequência divertida e emocional que expande o universo dos Guardiões.</p>
       <img src="./img/filmes/filmes8.jpg" alt="Poster do Filme 8" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme8', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme8', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=dW1BIid8Osg" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme8">Disponível para locação.</p>
       </div>
     </section>
 
     <section class="movie-ranking" id="filme9">
       <div class="ranking-header">
-        <h3>#9: Guardiões da Galáxia Vol.3</h3>
+        <h3>#9: Guardiões da Galáxia Vol. 3</h3>
         <span class="rank-number">9º Lugar</span>
       </div>
-      <p>Uma despedida emocionante para os personagens que conquistaram os fãs.</p>
+      <p>Um encerramento emocionante e cheio de coração para a trilogia cósmica.</p>
       <img src="./img/filmes/filmes9.jpg" alt="Poster do Filme 9" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme9', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme9', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=u3V5KDHRQvk" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme9">Disponível para locação.</p>
       </div>
     </section>
 
     <section class="movie-ranking" id="filme10">
       <div class="ranking-header">
-        <h3>#10: Batman: O Cavaleiro das Trevas</h3>
+        <h3>#10: O Cavaleiro das Trevas</h3>
         <span class="rank-number">10º Lugar</span>
       </div>
-      <p>Um dos melhores filmes de super-heróis já feitos, com um Coringa inesquecível.</p>
+      <p>O Batman enfrenta o Coringa em uma das maiores obras dos filmes de heróis.</p>
       <img src="./img/filmes/filmes10.jpg" alt="Poster do Filme 10" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme10', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme10', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme10">Disponível para locação.</p>
       </div>
     </section>
 
     <section class="movie-ranking" id="filme11">
       <div class="ranking-header">
-        <h3>#11: Batman: O Cavaleiro das Trevas Ressurge</h3>
+        <h3>#11: O Cavaleiro das Trevas Ressurge</h3>
         <span class="rank-number">11º Lugar</span>
       </div>
-      <p>Um final grandioso para a trilogia de Christopher Nolan.</p>
+      <p>O fechamento da trilogia de Christopher Nolan com muita ação e emoção.</p>
       <img src="./img/filmes/filmes11.jpg" alt="Poster do Filme 11" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme11', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme11', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=g8evyE9TuYk" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme11">Disponível para locação.</p>
       </div>
     </section>
@@ -213,11 +224,12 @@
         <h3>#12: Batman Begins</h3>
         <span class="rank-number">12º Lugar</span>
       </div>
-      <p>Um recomeço sombrio que redefiniu o herói para o cinema moderno.</p>
+      <p>A origem sombria e intensa do Cavaleiro das Trevas.</p>
       <img src="./img/filmes/filmes12.jpg" alt="Poster do Filme 12" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme12', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme12', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=neY2xVmOfUM" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme12">Disponível para locação.</p>
       </div>
     </section>
@@ -227,11 +239,12 @@
         <h3>#13: Beekeeper – Rede de Vingança</h3>
         <span class="rank-number">13º Lugar</span>
       </div>
-      <p>Ação eletrizante com Jason Statham em busca de justiça implacável.</p>
+      <p>Jason Statham em uma jornada brutal de vingança e justiça.</p>
       <img src="./img/filmes/filmes13.jpg" alt="Poster do Filme 13" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme13', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme13', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=jKCj3XuPG8M" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme13">Disponível para locação.</p>
       </div>
     </section>
@@ -241,11 +254,12 @@
         <h3>#14: Toy Story</h3>
         <span class="rank-number">14º Lugar</span>
       </div>
-      <p>O filme que revolucionou a animação e conquistou gerações.</p>
+      <p>Uma animação que marcou gerações e redefiniu o cinema infantil.</p>
       <img src="./img/filmes/filmes14.jpg" alt="Poster do Filme 14" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme14', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme14', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=KYz2wyBy3kc" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme14">Disponível para locação.</p>
       </div>
     </section>
@@ -255,11 +269,12 @@
         <h3>#15: Invocação do Mal</h3>
         <span class="rank-number">15º Lugar</span>
       </div>
-      <p>Um terror arrepiante baseado em eventos reais investigados por Ed e Lorraine Warren.</p>
+      <p>Baseado em fatos reais, um dos filmes de terror mais assustadores da década.</p>
       <img src="./img/filmes/filmes15.jpg" alt="Poster do Filme 15" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme15', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme15', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=k10ETZ41q5o" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme15">Disponível para locação.</p>
       </div>
     </section>
@@ -269,11 +284,12 @@
         <h3>#16: Bad Boys</h3>
         <span class="rank-number">16º Lugar</span>
       </div>
-      <p>Will Smith e Martin Lawrence em uma das duplas mais carismáticas do cinema de ação.</p>
+      <p>Os detetives Mike e Marcus começam a saga com muita ação e comédia.</p>
       <img src="./img/filmes/filmes16.jpg" alt="Poster do Filme 16" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme16', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme16', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=jcDGSkz1Ny0" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme16">Disponível para locação.</p>
       </div>
     </section>
@@ -283,11 +299,12 @@
         <h3>#17: Bad Boys 2</h3>
         <span class="rank-number">17º Lugar</span>
       </div>
-      <p>Ainda mais ação e humor, consolidando o sucesso da dupla de policiais.</p>
+      <p>Mais ação, mais humor e muito carisma da dupla principal.</p>
       <img src="./img/filmes/filmes17.jpg" alt="Poster do Filme 17" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme17', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme17', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=hsuKq5pHpJA" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme17">Disponível para locação.</p>
       </div>
     </section>
@@ -297,11 +314,12 @@
         <h3>#18: Bad Boys para Sempre</h3>
         <span class="rank-number">18º Lugar</span>
       </div>
-      <p>Um retorno nostálgico e cheio de adrenalina para os fãs da franquia.</p>
+      <p>O retorno triunfal da dupla em uma aventura moderna e empolgante.</p>
       <img src="./img/filmes/filmes18.jpg" alt="Poster do Filme 18" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme18', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme18', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=jKCj3XuPG8M" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme18">Disponível para locação.</p>
       </div>
     </section>
@@ -311,41 +329,33 @@
         <h3>#19: Bad Boys até o Fim</h3>
         <span class="rank-number">19º Lugar</span>
       </div>
-      <p>Mais recente capítulo da saga, equilibrando humor e ação explosiva.</p>
+      <p>O mais novo capítulo da franquia, cheio de ação e nostalgia.</p>
       <img src="./img/filmes/filmes19.jpg" alt="Poster do Filme 19" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme19', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme19', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=e6CK97y9lIE" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme19">Disponível para locação.</p>
       </div>
     </section>
 
     <section class="movie-ranking" id="filme20">
       <div class="ranking-header">
-        <h3>#20: O Anônimo (2021)</h3>
+        <h3>#20: O Anônimo</h3>
         <span class="rank-number">20º Lugar</span>
       </div>
-      <p>Um homem aparentemente comum revela um passado cheio de segredos em um filme de ação intenso e surpreendente.</p>
+      <p>Um homem comum revela um passado letal em um filme de ação eletrizante.</p>
       <img src="./img/filmes/filmes20.jpg" alt="Poster do Filme 20" class="movie-poster">
       <div class="locadora-actions">
         <button class="action-btn emprestar-btn" onclick="simularLocacao('filme20', 'Emprestar')">Emprestar (R$ 5,00)</button>
         <button class="action-btn vender-btn" onclick="simularLocacao('filme20', 'Vender')">Vender (R$ 30,00)</button>
+        <a href="https://www.youtube.com/watch?v=wZti8QKBWPo" target="_blank" class="action-btn trailer-btn">🎬 Ver Trailer</a>
         <p class="status-locacao" id="status-filme20">Disponível para locação.</p>
       </div>
     </section>
-
   </main>
 </div>
 
-<footer class="site-footer">
-  <p>&copy; 2025 Ranking Pessoal de Filmes. Todos os direitos reservados.</p>
-</footer>
-
-<script src="locadora.js"></script>
-</body>
-</html>
-
-
-
-
-
+<footer id="footer">
+  <p>© 2025 A Locadora do Top 20. Todos os direitos reservados.</p>
+</
